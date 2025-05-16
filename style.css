@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", serif;
+}
+:root {
+  --bgColor: #1e1c1f;
+  --bg2ndColor: #94c2ff;
+  --textColor: #1e1c1f;
+  --h3pColor: #999999;
+  --h3secondColor: #555555;
+  --btnbgColor: #4070f4;
+  --btnBrdrColor: #4070f4;
+  --BrdrColor: #00d9ff;
+  --whiteColor: #fff;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgColor);
+  color: var(--textColor);
+  gap: 30px;
+}
+
+.card{
+  width: 400px;
+  padding: 40px;
+  background: var(--bg2ndColor);
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.image{
+  width: 180px;
+  height: 180px;
+  margin-top: -130px;
+  border: 3px solid var(--bg2ndColor);
+  border-radius: 10px;
+  margin-inline: auto;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image:hover{
+  transform: scale(1.1);
+}
+
+.contentSection{
+  margin-top: 20px;
+  text-align: center;
+  height: 80px;
+  overflow: hidden;
+  transition: .5s;
+}
+.card:hover .contentSection{
+  height: 280px;
+}
+
+.card:hover{
+  background: #fff;
+}
+
+.card:hover h3{
+  color: var(--h3pColor);
+}
+
+.card:hover .image{
+  border-color: var(--whiteColor);
+}
+
+h1{
+  font-size: 35px;
+}
+h3{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--h3secondColor);
+}
+
+.socialRowSec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 15px;
+}
+
+.col p{
+  color: var(--h3pColor);
+  font-weight: 500;
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  background: var(--btnbgColor);
+  color: #fff;
+  border: 2px solid var(--btnBrdrColor);
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.socialRowSec button:nth-child(2){
+  background: transparent;
+  color: var(--btnbgColor);
+}
+
+button:hover, .row2:hover{
+  font-size: 1.3rem;
+  transition: .3s;
+}
+
+.row2{
+  margin-top: 30px;
+}
